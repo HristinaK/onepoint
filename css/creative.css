@@ -243,12 +243,23 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-position: bottom;
-    background-image: url('../img/iphone6splus.jpg');
+    background-position: top;
+    background-image: url('../img/home-office.jpg');
     height: 100%;
     text-align: center;
     text-shadow: 1px 1px 4px #3f3f3f;
     color: white;
+}
+
+.picture{
+	background-image: url('../img/computer.jpg');
+	position: relative;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: top;
 }
 
 header .header-content {
