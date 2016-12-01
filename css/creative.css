@@ -637,7 +637,7 @@ body {
     font-style: normal;
 }
 
-#nagore {
+#nagore, #nagore a {
     width: 3em;
     height: 3em;
     color: #fff;
@@ -645,9 +645,10 @@ body {
     position: fixed;
     top: 85%;
     right: 3%;
+    display: none;
 }
 
-#nagore a:hover {
+#nagore:hover {
     color: #ffffff;
 }
 

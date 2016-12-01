@@ -73,6 +73,9 @@
                     <a class="page-scroll" href="#services">Services</a>
                 </li>
                 <li>
+                    <a class="page-scroll" href="#why-us">Why Us</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
 				<li class="divider-vertical"></li>
@@ -105,7 +108,7 @@
     </div>
 </header>
 
-<section id="services" class="bg-dark">
+<section id="services" class="bg-dark nagore-show">
 <!--Nav Pills Style-->
     <div class="container">
         <div class="row">
@@ -242,9 +245,11 @@ In the contemporary hectic business environment you should dedicate most to  you
 </section>
 
 <footer class="container-fluid text-center bg-dark">
-    <a id="nagore" href="#page-top" class="page-scroll" title="To Top">
-        <div id="strelka"><span class="fa fa-chevron-up"></span></div>
-    </a>
+    <div id="nagore" >
+        <a href="#page-top" class="page-scroll" title="To Top">
+            <div id="strelka"><span class="fa fa-chevron-up"></span></div>
+        </a>
+    </div>
     <br>
     <div class="container">
         <div class="col-md-6 copyright">
@@ -261,12 +266,25 @@ In the contemporary hectic business environment you should dedicate most to  you
                 <li><a href="#page-top">onepoint.com.mk</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Testimonials</a></li>
+                <li><a href="#why-us">Why us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </footer>
+
+<script>
+    $(window).scroll(function (event) {
+        var y = $(document).scrollTop();
+        var t = $('.nagore-show').parent().offset().top;
+        if (y > t) {
+            $('#nagore').fadeIn();
+            $('#nagore a').fadeIn();
+        } else {
+            $('#nagore').fadeOut();
+        }
+    });
+</script>
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
