@@ -272,8 +272,16 @@ aside {
 
 @media (max-width: 767px) {
     .navbar-collapse .nav > .divider-vertical {
-        display: none;
+        width: 90%;
+        height: 0px;
+        margin: 0px 9px;
+        border-left:none;
+        border-rigth:none;
+        border-top: 1px solid #003366;
+        border-left: 1px solid #222;
+        opacity: 0.5;
      }
+
 }
 
 header {
